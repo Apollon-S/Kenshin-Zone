@@ -24,4 +24,4 @@ const loadingInterval = setInterval(() => {
         progressBar.style.width = progress + '%';
         percentageText.textContent = progress + '%';
     }
-}, 50); // Ajuste a velocidade do carregamento se necessário
+}, 25); // Ajuste a velocidade do carregamento se necessário

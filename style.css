@@ -1,6 +1,6 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #010B12, #1E1F21);
+    background: linear-gradient(135deg, #202427, #2c2e31);
     color: #39FF13;
     margin: 0;
     display: flex;
@@ -15,13 +15,18 @@ body {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 180px;
 }
 
 h1 {
     font-size: 24px;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .dots {
     font-weight: bold;
 }
@@ -44,7 +49,7 @@ h1 {
 
 .welcome-container {
     text-align: center;
-    background-color: rgba(12, 137, 0, 0.85);
+    background-color: #000000;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
@@ -65,4 +70,9 @@ button {
 button:hover {
     background-color: #39FF13;
     color: #000;
+}
+
+.notextlogo {
+    max-width: 180px;
+    max-height: 150px;
 }

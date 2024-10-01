@@ -140,7 +140,8 @@ div#overlay {
 }
 
 .input-group {
-    margin: 10px 0;
+    width: 92%;
+    margin: 12px 0;
 }
 
 .input-group label {
@@ -203,6 +204,7 @@ div#overlay {
     color: #39FF13;
     background: transparent;
 }
+
 .register-container {
     position: relative;
     z-index: 1;
@@ -211,4 +213,8 @@ div#overlay {
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
+}
+
+.logo-login-cadastro {
+    max-width: 300px;
 }

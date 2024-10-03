@@ -218,3 +218,14 @@ div#overlay {
 .logo-login-cadastro {
     max-width: 300px;
 }
+
+.slash {
+    position: absolute;
+    width: 18px;
+    height: 2.5px;
+    background: #39FF13;
+    transform: rotate(135deg);
+    top: 472px;
+    left: 309px;
+    z-index: 1; 
+}

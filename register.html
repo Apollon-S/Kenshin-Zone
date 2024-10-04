@@ -31,24 +31,33 @@
         </form>
     </div>
     <script>
+        const slash2 = document.querySelector('.slash2'); // Define a variável `slash`
+        const slash3 = document.querySelector('.slash3'); // Define a variável `slash`
+
         const togglePasswordButton = document.getElementById('togglePassword');
         const passwordField = document.getElementById('password');
 
         const toggleConfirmPasswordButton = document.getElementById('toggleConfirmPassword');
         const confirmPasswordField = document.getElementById('confirmPassword');
 
-        // Alternar visualização da senha principal
+        
         togglePasswordButton.addEventListener('click', () => {
             const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordField.setAttribute('type', type);
-            togglePasswordButton.textContent = type === 'password' ? '👁' : '🕶️';
+            togglePasswordButton.textContent = type === 'password' ? '👁' : '👁';
         });
 
-        // Alternar visualização da confirmação de senha
+     
         toggleConfirmPasswordButton.addEventListener('click', () => {
             const type = confirmPasswordField.getAttribute('type') === 'password' ? 'text' : 'password';
             confirmPasswordField.setAttribute('type', type);
-            toggleConfirmPasswordButton.textContent = type === 'password' ? '👁' : '🕶️';
+            toggleConfirmPasswordButton.textContent = type === 'password' ? '👁' : '👁';
+
+            if (slash.style.display === 'none') {
+                slash.style.display = 'block'; 
+            } else {
+                slash.style.display = 'none'; 
+            }
         });
     </script>
 </body>

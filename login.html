@@ -20,7 +20,7 @@
             <div class="input-group password-group">
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" required>
-                <button type="button" id="togglePassword" class="toggle-password">&#128065;</button>
+                <button type="button" id="togglePassword" class="toggle-password">👁</button>
             </div>
             <button type="submit">Entrar</button>
             <p class="link">Não tem uma conta? <a href="register.html"><strong>Cadastre-se</strong></a></p>
@@ -29,12 +29,16 @@
     <script>
         const togglePasswordButton = document.getElementById('togglePassword');
         const passwordField = document.getElementById('password');
-
+        const slash = document.querySelector('.slash'); 
         togglePasswordButton.addEventListener('click', () => {
             const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordField.setAttribute('type', type); 
+            passwordField.setAttribute('type', type);
             togglePasswordButton.textContent = type === 'password' ? '👁' : '👁';
-            slash.style.display = 'none';   
+            if (slash.style.display === 'none') {
+                slash.style.display = 'block'; 
+            } else {
+                slash.style.display = 'none'; 
+            }
         });
     </script>
 </body>

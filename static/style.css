@@ -1,0 +1,256 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #202427, #2c2e31);
+    color: #39FF13;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url("teste.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.splash-screen, .welcome-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+.splash-screen {
+    padding: 70px;
+    border-radius: 15px;
+    background-color:#000000;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    width: 180px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+.dots {
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #444;
+    border-radius: 20px;
+    height: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.progress {
+    background-color: #9CFF00;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    transition: width 0.1s ease;
+}
+
+.welcome-container {
+    text-align: center;
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #39FF13;
+    color: #39FF13;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: #39FF13;
+    color: #000;
+}
+
+.notextlogo {
+    max-width: 180px;
+    max-height: 150px;
+}
+
+/* Add animation classes to the divs */
+.animate-out {
+    animation: fadeOut 2s forwards;
+  }
+  
+  .animate-in {
+    animation: fadeIn 2s forwards;
+  }
+  
+  /* Define the animations */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+div#overlay {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 62%;
+  }
+
+  .login-container {
+    position: relative;
+    z-index: 1;
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin: 0 0 20px 0;
+    color: #39FF13;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.input-group {
+    width: 92%;
+    margin: 12px 0;
+}
+
+.input-group label {
+    display: block;
+    color: #39FF13;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #39FF13;
+    border-radius: 6px;
+    background-color: #333;
+    color: #39FF13;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #9CFF00;
+}
+
+
+
+.link {
+    margin-top: 20px;
+}
+
+.link a {
+    color: #9CFF00;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.imglogin {
+    width: 300px;
+}
+
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    color: #39FF13;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.toggle-password:hover {
+    color: #39FF13;
+    background: transparent;
+}
+
+.register-container {
+    position: relative;
+    z-index: 1;
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.logo-login-cadastro {
+    max-width: 300px;
+}
+
+.slash2 {
+    position: absolute;
+    width: 18px;
+    height: 2.5px;
+    background: #39FF13;
+    transform: rotate(135deg);
+    top: 474px;
+    left: 308px;
+    z-index: 1; 
+    display: none;
+}
+
+.slash {
+    position: absolute;
+    width: 18px;
+    height: 2.5px;
+    background: #39FF13;
+    transform: rotate(135deg);
+    top: 473.5px;
+    left: 309px;
+    z-index: 1; 
+    display: none;
+}
+
+.slash3 {
+    position: absolute;
+    width: 18px;
+    height: 2.5px;
+    background: #39FF13;
+    transform: rotate(135deg);
+    top: 474px;
+    left: 308px;
+    z-index: 1; 
+    display: none;
+}

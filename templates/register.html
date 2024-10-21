@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenshin Zone - Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo1.png">
+</head>
+<body>
+    <div id="overlay"></div>
+    <div class="register-container">
+        <img src="logo2.png" alt="Logo register" class="logo-login-cadastro">
+        <form>
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group password-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+                <button type="button" id="togglePassword" class="toggle-password">&#128065;</button>
+            </div>
+            <div class="input-group password-group">
+                <label for="confirmPassword">Confirmar Senha</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <button type="button" id="toggleConfirmPassword" class="toggle-password">&#128065;</button>
+            </div>
+            <button type="submit">Cadastrar</button>
+            <p class="link">Já possui uma conta? <a href="login.html"><strong>Faça login</strong></a></p>
+        </form>
+    </div>
+    <script>
+        const slash2 = document.querySelector('.slash2'); // Define a variável `slash`
+        const slash3 = document.querySelector('.slash3'); // Define a variável `slash`
+
+        const togglePasswordButton = document.getElementById('togglePassword');
+        const passwordField = document.getElementById('password');
+
+        const toggleConfirmPasswordButton = document.getElementById('toggleConfirmPassword');
+        const confirmPasswordField = document.getElementById('confirmPassword');
+
+        
+        togglePasswordButton.addEventListener('click', () => {
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+            togglePasswordButton.textContent = type === 'password' ? '👁' : '👁';
+        });
+
+     
+        toggleConfirmPasswordButton.addEventListener('click', () => {
+            const type = confirmPasswordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPasswordField.setAttribute('type', type);
+            toggleConfirmPasswordButton.textContent = type === 'password' ? '👁' : '👁';
+
+            if (slash.style.display === 'none') {
+                slash.style.display = 'block'; 
+            } else {
+                slash.style.display = 'none'; 
+            }
+        });
+    </script>
+</body>
+</html>

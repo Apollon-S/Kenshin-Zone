@@ -21,4 +21,9 @@ Descrição: Sistema para anotar progressão de carga, ver a evolução da carga
 3. Caso esteja usando o Visual Studio Code, instale a extensão de Python.
 ## Como executar o projeto
 1. Clique com o botão direito no arquivo `app.py`
-2. Selecione executar o arquivo Python no termianl
+2. Selecione executar o arquivo Python no terminal
+## Como enviar modificações para o GitHub
+1. Configurar seu usuário e e-mail do Git
+2. Abrir novo terminal
+3. Executar `git config user.name seu_usuario` `git config user.email seu_email`
+4. Dê commit pelo Visual Studio Code

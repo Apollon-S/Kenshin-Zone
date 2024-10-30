@@ -15,3 +15,10 @@ Descrição: Sistema para anotar progressão de carga, ver a evolução da carga
 4. Clique em clonar do Github, faça a autenticação
 5. Volte para o Visual Studio Code ou a IDE de preferência e selecione seu projeto para clonar
 6. Escolha um lugar para salvar o projeto e clique em "Abrir"
+## Como instalar a biblioteca Flask do Python
+1. Abrir novo terminal: Na barra de ferramentas da IDE, procure abrir terminal
+2. Digite o comando `pip install flask --user`
+3. Caso esteja usando o Visual Studio Code, instale a extensão de Python.
+## Como executar o projeto
+1. Clique com o botão direito no arquivo `app.py`
+2. Selecione executar o arquivo Python no termianl

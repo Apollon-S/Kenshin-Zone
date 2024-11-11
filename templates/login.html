@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenshin Zone - Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo1.png">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" href="static/img/logo1.png">
 </head>
 <body>
     <div id="overlay"></div>
     <div class="login-container">
-        <img src="logo2.png" alt="Logo sem texto" class="logo-login-cadastro">
+        <img src="static/img/logo2.png" alt="Logo sem texto" class="logo-login-cadastro">
         <form>
             <div class="input-group">
                 <label for="username">Usuário</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" placeholder="Digite seu e-mail ou nome de usuário" required>
             </div>
             <div class="slash"></div>
             <div class="input-group password-group">
                 <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
                 <button type="button" id="togglePassword" class="toggle-password">👁</button>
             </div>
             <button type="submit">Entrar</button>
-            <p class="link">Não tem uma conta? <a href="register.html"><strong>Cadastre-se</strong></a></p>
+            <p class="link">Não tem uma conta? <a href="/register"><strong>Cadastre-se</strong></a></p>
         </form>
     </div>
     <script>
@@ -32,12 +32,11 @@
         const slash = document.querySelector('.slash'); 
         togglePasswordButton.addEventListener('click', () => {
             const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordField.setAttribute('type', type);
-            togglePasswordButton.textContent = type === 'password' ? '👁' : '👁';
-            if (slash.style.display === 'none') {
-                slash.style.display = 'block'; 
-            } else {
+            passwordField.setAttribute('type', type); 
+            if (slash.style.display === 'block') {
                 slash.style.display = 'none'; 
+            } else {
+                slash.style.display = 'block'; 
             }
         });
     </script>

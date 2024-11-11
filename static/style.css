@@ -8,7 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background-image: url("teste.jpg");
+    background-image: url("img/teste.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -120,7 +120,7 @@ div#overlay {
     width: 100%;
     height: 100vh;
     position: absolute;
-    opacity: 62%;
+    opacity: 50%;
   }
 
   .login-container {
@@ -219,6 +219,19 @@ div#overlay {
     max-width: 300px;
 }
 
+
+.slash {
+    position: absolute;
+    width: 18px;
+    height: 2.5px;
+    background: #39FF13;
+    transform: rotate(135deg);
+    top: 473.5px;
+    left: 309px;
+    z-index: 1;
+    display: none; 
+}
+
 .slash2 {
     position: absolute;
     width: 18px;
@@ -231,25 +244,13 @@ div#overlay {
     display: none;
 }
 
-.slash {
-    position: absolute;
-    width: 18px;
-    height: 2.5px;
-    background: #39FF13;
-    transform: rotate(135deg);
-    top: 473.5px;
-    left: 309px;
-    z-index: 1; 
-    display: none;
-}
-
 .slash3 {
     position: absolute;
     width: 18px;
     height: 2.5px;
     background: #39FF13;
     transform: rotate(135deg);
-    top: 474px;
+    top: 548.5px;
     left: 308px;
     z-index: 1; 
     display: none;
